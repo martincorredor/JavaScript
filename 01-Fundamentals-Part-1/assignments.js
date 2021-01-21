@@ -91,7 +91,7 @@ console.log('19' - '13' + 17);//result: 23
 console.log('123' < 57);//result: False
 console.log(5 + 6 + '4' + 9 - 4 - 2);//result: 1143
 
-
+/*
 //Equality Operators: == vs ===
 numNeighbours = Number(prompt('How many neighbour countries does your country have?'))
 if (numNeighbours === 1) {
@@ -101,3 +101,30 @@ if (numNeighbours === 1) {
 } else {
     console.log('No borders');
 }
+*/
+
+
+//Coding challenge #3
+
+//Data 1
+const dolphins_score1 = 96;
+const dolphins_score2 = 108;
+const dolphins_score3 = 89;
+
+const koalas_score1 = 88;
+const koalas_score2 = 91;
+const koalas_score3 = 110;
+
+const average_score_dolphins = (dolphins_score1 + dolphins_score2 + dolphins_score3) / 3;
+const average_score_koalas = (koalas_score1 + koalas_score2 + koalas_score3) / 3;
+
+if (average_score_dolphins > average_score_koalas){
+    console.log("Team Dolphins is the winner with score " + average_score_dolphins)
+} else if (average_score_dolphins < average_score_koalas){
+    console.log("Team koalas is the winner with score " + average_score_dolphins)
+} else {
+    console.log("There is a draw with score " + average_score_dolphins)
+}
+
+//Bonus 1
+
