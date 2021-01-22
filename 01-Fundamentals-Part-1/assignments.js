@@ -111,20 +111,47 @@ const dolphins_score1 = 96;
 const dolphins_score2 = 108;
 const dolphins_score3 = 89;
 
-const koalas_score1 = 88;
-const koalas_score2 = 91;
-const koalas_score3 = 110;
+const koalas_score1 = 96;
+const koalas_score2 = 108;
+const koalas_score3 = 89;
 
 const average_score_dolphins = (dolphins_score1 + dolphins_score2 + dolphins_score3) / 3;
 const average_score_koalas = (koalas_score1 + koalas_score2 + koalas_score3) / 3;
 
-if (average_score_dolphins > average_score_koalas){
+
+const higher_dolphins = average_score_dolphins > average_score_koalas;
+const higher_koalas = average_score_koalas > average_score_dolphins;
+const draw_score = average_score_dolphins === average_score_koalas;
+const score_dol_higher_hundred = average_score_dolphins > 100;
+const score_koa_higher_hundred = average_score_koalas > 100;
+
+
+if (higher_dolphins){
     console.log("Team Dolphins is the winner with score " + average_score_dolphins)
-} else if (average_score_dolphins < average_score_koalas){
-    console.log("Team koalas is the winner with score " + average_score_dolphins)
+} else if (higher_koalas){
+    console.log("Team koalas is the winner with score " + average_score_koalas)
 } else {
     console.log("There is a draw with score " + average_score_dolphins)
 }
 
-//Bonus 1
+//Bonus 1 
+if (higher_dolphins && score_dol_higher_hundred){
+    console.log("Team Dolphins is the winner with score " + average_score_dolphins)
+} else if (higher_koalas && score_koa_higher_hundred){
+    console.log("Team koalas is the winner with score " + average_score_koalas)
+} else if (draw_score){
+    console.log("There is a draw with score " + average_score_dolphins)
+} else{
+    console.log("There is not a champion")
+}
 
+//Bonus 2
+if (higher_dolphins && score_dol_higher_hundred){
+    console.log("Team Dolphins is the winner with score " + average_score_dolphins)
+} else if (higher_koalas && score_koa_higher_hundred){
+    console.log("Team koalas is the winner with score " + average_score_koalas)
+} else if (score_dol_higher_hundred && score_koa_higher_hundred && draw_score){
+    console.log("There is a draw with score " + average_score_dolphins)
+} else{
+    console.log("There is not a champion")
+}
