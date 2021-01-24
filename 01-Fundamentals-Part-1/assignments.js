@@ -103,7 +103,7 @@ if (numNeighbours === 1) {
 }
 */
 
-
+/*
 //Coding challenge #3
 
 //Data 1
@@ -155,3 +155,31 @@ if (higher_dolphins && score_dol_higher_hundred){
 } else{
     console.log("There is not a champion")
 }
+*/
+
+
+//The switch statment
+let lenguages = 'spanish'
+switch (lenguages){
+    case 'chinese':
+        console.log('Most number of native speakers');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken lenguage');
+        break;
+    default:
+        console.log('Great lenguage too :D');
+}
+
+
+//THe conditional(Ternary) Operator
+
