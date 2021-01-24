@@ -92,3 +92,10 @@ if (higher_dolphins && score_dol_higher_hundred){
 }
 */
 
+//Coding challenges #4
+//Data1
+const bill = 275.40;
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+
+console.log(`The check is: ${bill}, your tip is: ${tip} and your final che is: ${bill + tip}`);
+
