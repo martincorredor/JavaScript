@@ -1,4 +1,3 @@
-/*
 //Coding challenge #1
 let heightMark = 1.69;//meters
 let massMark = 78;//kg
@@ -21,9 +20,9 @@ BMIMark = heightMark / (massMark * massMark);
 BMIJohn = heightJohn / (massJohn * massJohn);
 markHiguerBMI = BMIMark > BMIJohn;
 console.log(markHiguerBMI);
-*/
 
-/*
+
+
 //Coding challenge #2
 let heightMark = 1.69;//meters
 let massMark = 78;//kg
@@ -39,9 +38,9 @@ if(BMIMark > BMIJohn){
 } else {
     console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}!`);
 }
-*/
 
-/*
+
+
 //Coding challenge #3
 //Data 1
 const dolphins_score1 = 96;
@@ -90,7 +89,7 @@ if (higher_dolphins && score_dol_higher_hundred){
 } else{
     console.log("There is not a champion")
 }
-*/
+
 
 //Coding challenges #4
 //Data1
