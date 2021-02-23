@@ -51,7 +51,7 @@ console.log(firstCountry, secondCountry, thirdCountry);
 */
 
 
-/*
+
 //Funtions calling Other Functions
 function percentageOfWorld1(population){
     //total population of world is 7900 million people
@@ -66,9 +66,36 @@ function describePopulation(country, population){
 const firstCountry = describePopulation('Colombia', 50);
 const secondCountry = describePopulation('Japón', 126.5);
 const thirdCountry = describePopulation('Rusia', 144.5);
+const fourCountry = describePopulation('Korea', 51.6)
+
 
 console.log (firstCountry);
 console.log (secondCountry);
 console.log (thirdCountry);
-*/
+console.log (fourCountry);
 
+
+//Introduction to arrays
+const populations = ["Colombia", "Japon", "Rusia", "Korea"];
+if (populations.length == 4) {
+    console.log("True");
+}else {
+    console.log("False");
+}
+
+const percentages = [firstCountry, secondCountry, thirdCountry, fourCountry];
+
+//Basic Array Operations(Methods)
+let neighbours = ["Perú", 'Brasil', 'Ecuador', 'Venezuela'];
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if (neighbours.includes('Ecuador')) {
+    let indice = neighbours.indexOf('Ecuador');
+    neighbours[indice] = 'Alemania';
+}
+console.log(neighbours);
+
+//
