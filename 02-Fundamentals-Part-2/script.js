@@ -51,7 +51,7 @@ console.log(firstCountry, secondCountry, thirdCountry);
 */
 
 
-
+/*
 //Funtions calling Other Functions
 function percentageOfWorld1(population){
     //total population of world is 7900 million people
@@ -97,5 +97,47 @@ if (neighbours.includes('Ecuador')) {
     neighbours[indice] = 'Alemania';
 }
 console.log(neighbours);
+*/
 
-//
+/*
+//Introduction to objects
+const myCountry = {
+    country: "Colombia",
+    capital: "Bogotá",
+    language: "Spanish",
+    population: "50"
+}
+
+//Mini_challenge
+//Imprimir a partir de los datos del objeto: 
+//"Jonas has 3 friends, and his best friend is called Michael"
+const Jonas = {
+    firstName: "Jonas",
+    lastName: "Schmetman",
+    birth_year: 1991,
+    job: "teacher",
+    friends: ['Michael', 'Peter', 'Steven'],
+    has_driver_license: true,
+    calc_age: function() {
+        this.age = 2037 - this.birth_year;
+        return this.age;
+    },
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calc_age()}-years old ${this.job}, 
+        and he has ${this.has_driver_license ? 'a' : 'no'} driver's license.`
+    }
+}
+
+console.log(Jonas.firstName + " has " + Jonas.friends.length + 
+            " friends, and his best friend is called " + Jonas.friends[0]);
+
+Jonas.calc_age();
+console.log(Jonas.age);
+console.log(Jonas);
+
+//Imprimir:
+//"Jonas is a 46-year old teacher, and he has (/ or not) a driver license"
+console.log(Jonas.getSummary());
+*/
+
+//Dot vs Braket notation
