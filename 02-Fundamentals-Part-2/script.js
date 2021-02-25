@@ -179,3 +179,9 @@ const myCountry = {
 myCountry.describe();
 console.log(myCountry.checkIsland());
 */
+/*
+//Iteration: The for loop
+for(let vot = 1; vot <= 50; vot++){
+    console.log(`Voter number ${vot} is currently voting`)
+}
+*/
