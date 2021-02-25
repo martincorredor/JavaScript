@@ -139,5 +139,43 @@ console.log(Jonas);
 //"Jonas is a 46-year old teacher, and he has (/ or not) a driver license"
 console.log(Jonas.getSummary());
 */
-
+/*
 //Dot vs Braket notation
+const myCountry = {
+    country: "Colombia",
+    capital: "Bogotá",
+    language: "Spanish",
+    population: 50,
+    neighbours: ["Perú", 'Brasil', 'Ecuador', 'Venezuela']
+};
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,
+            ${myCountry.neighbours.length} neihbouring countries  and a capital  called ${myCountry.capital}.`);
+
+myCountry.population = myCountry.population + 2;
+console.log(myCountry.population);
+*/
+/*
+//Object Methods
+const myCountry = {
+    country: "Colombia",
+    capital: "Bogotá",
+    language: "Spanish",
+    population: 50,
+    neighbours: ["Perú", 'Brasil', 'Ecuador', 'Venezuela'],
+    describe: function(){
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people,
+                    ${this.neighbours.length} neihbouring countries  and a capital  called ${this.capital}.`)
+    },
+    checkIsland: function(){
+        if(this.neighbours.length > 0){
+            return this.isIsland = true;
+        }else{
+            return this.isIsland = false;
+        }
+    }
+};
+
+myCountry.describe();
+console.log(myCountry.checkIsland());
+*/
