@@ -185,3 +185,24 @@ for(let vot = 1; vot <= 50; vot++){
     console.log(`Voter number ${vot} is currently voting`)
 }
 */
+/*
+//Looping arrays, Breaking and continuing
+const countries = ["Colombia", "Japon", "Rusia", "Korea"];
+const people_of_country = [50, 126.5, 144.5, 51.6];
+const percentages2 = [];
+for( let i = 0 ; i < people_of_country.length; i ++){
+     percentages2[i] = (people_of_country[i]/7900)*100 + '%';
+}
+
+console.log(percentages2);
+*/
+/*
+//Looping Backwards and Loops in Loops
+let list_of_neighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Rusia']];
+for(let value in list_of_neighbours){
+    let country = list_of_neighbours[value];
+    for(let i in country){
+        console.log(country[i]);
+    }
+}
+*/
