@@ -114,3 +114,41 @@ if(mark.bmi > john.bmi){
     console.log(`${john.full_name} BMI (${john.bmi}) is higher than ${mark.full_name}'s (${mark.bmi})!`)
 }
 */
+
+/*
+//Challenge #4
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals =[];
+
+function calcTip(value){
+    let tip;
+    if (50 < value < 300){
+        tip = value * 0.15;
+    }
+    else{
+        tip = value * 0.20;
+    }
+    return tip;
+}
+
+for(let value in bills){
+    tips.push(calcTip(bills[value]));
+    totals.push(bills[value] + tips[value]);
+}
+console.log(tips);
+console.log(totals);
+
+//Bonus
+function calcAverage(arr){
+    let sum = 0;
+    for(let i in arr){
+        sum += arr[i];
+    }
+    let average = sum / arr.length;
+    return(average);
+}
+console.log(`Average of the bills is: ${calcAverage(bills)}`);
+console.log(`Average of the tips is: ${calcAverage(tips)}`);
+console.log(`Average of the totals is: ${calcAverage(totals)}`);
+*/
